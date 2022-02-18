@@ -15,7 +15,7 @@ class Enemy: SKSpriteNode {
         self.name = "Enemy"
         self.physicsBody = SKPhysicsBody(rectangleOf: self.size)
         self.physicsBody?.affectedByGravity = false
-        self.physicsBody!.isDynamic = true
+        self.physicsBody?.isDynamic = true
         self.physicsBody?.categoryBitMask = CollisionCategoryBitmask.Enemy
         self.physicsBody?.contactTestBitMask = CollisionCategoryBitmask.Bullet
         self.physicsBody?.collisionBitMask = CollisionCategoryBitmask.Enemy
